@@ -120,7 +120,7 @@ pipeline {
                         sleep 5
                    '''
 
-                echo '### Creating a new app in Staging ###
+                echo '### Creating a new app in Staging ###'
 		sh '''
 		 oc project ${STAGE_PROJECT}
 		 oc new-app --as-deployment-config --name books -i books:stage
